@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+/**********************/
+/**********************/
+/**********************/
+/**********************/
+/**********************/
+/**********************/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+}
+
+.container {
+  background-color: #090b1a;
+  display: grid;
+  grid-template-rows: 90vh 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.card {
+  grid-row: 1;
+  width: 70%;
+  height: min-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
   
   <title>Frontend Mentor | Stats preview card component</title>
 
@@ -14,17 +15,36 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body class="container">
+  <main class="card">
 
-  Get insights that help your business grow.
+    <section class="card__info">
+      <h1 class="card__heading">
+        Get insights that help your business grow.
+      </h1>
+      <p class="card__text">
+        Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+        experience, and overall efficiency.
+      </p>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+      <div class="card__stats">
+        <div class="card__stats -companies">
+          10k+ companies
+        </div>
+        <div class="card__stats -templates">
+          314 templates
+        </div>
+        <div class="card__stats -queries">
+          12m+ queries
+        </div>
+      </div>
+    </section>
 
-  10k+ companies
-  314 templates
-  12m+ queries
-
+    <figure class="card__hero">
+      <img src="./images/image-header-desktop.jpg" alt="Women at table">
+    </figure>
+  </main>
+  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.

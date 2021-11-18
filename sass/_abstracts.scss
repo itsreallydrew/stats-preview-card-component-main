@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+/**********************/
+// BREAKPOINTS
+$desktop: 90em; // 1440px / 16rem
+$mobile: 24em; // 375px / 16rem
+
+/**********************/
+// COLORS
+
+// Primary
+$primary-1: hsl(233, 47%, 7%); // very dark blue -- (main background)
+$primary-2: hsl(244, 38%, 16%); // dark desaturated blue -- (card background)
+$primary-3: hsl(277, 64%, 61%); // soft violet -- (accent)
+
+// Neutral
+$neutral-1: hsl(0, 0%, 100%); // white -- main heading, stats
+$neutral-2: hsla(0, 0%, 100%, 0.75); // transparent white -- main paragraph
+$neutral-3: hsla(0, 0%, 100%, 0.6); // transparent white -- stat headings
+
+/**********************/
+// TYPOGRAPHY
+
+$primary-font: 'Inter', sans-serif;
+$secondary-font: 'Lexend Deca', sans-serif;
+
+/**********************/
+/**********************/
+/**********************/

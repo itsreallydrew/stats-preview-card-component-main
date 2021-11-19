@@ -53,7 +53,7 @@ The biggest thing I learned was how to set the opacity to create the overlay eff
 
 The next most difficult thing was making the layout for mobile. At first I was struggling because everything was out of wack. But I learned that by resizing the rows and columns it was much easier to adjust the display than I initially believed.
 
-To see how you can add code snippets, see below:
+Below is my code for the layout in desktop size and the specified mobile view:
 
 ```css
 .container {

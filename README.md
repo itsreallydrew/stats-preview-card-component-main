@@ -28,13 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+![Screenshot 2021-11-19 at 15-40-41 Frontend Mentor Stats preview card component](https://user-images.githubusercontent.com/88289750/142695232-7ce7798d-add6-47e2-ad2c-151798d99103.png)
 
 ### Links
 
@@ -43,7 +37,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ## My process
 
-I once again wanted to approach this problem using CSS grid. I feel like I have more control in placing items where I want when I use grid. WIP...
+I once again wanted to approach this problem using CSS grid. I feel like I have more control in placing items where I want when I use grid. I decided to go with a desktop first approach and figure out how to center the card itself in the middle of the page. At first I used only two rows and no columns, but then I realized that didn't translate well for mobile. I then decided to use 3 columns and have the center column take up a percentage of the viewport width. From there I have begun to understand that using vw and vh units makes it much easier to create a responsive layout.
 
 ### Built with
 
@@ -57,47 +51,38 @@ I once again wanted to approach this problem using CSS grid. I feel like I have 
 
 The biggest thing I learned was how to set the opacity to create the overlay effect. This took me a lot longer than I believed it would to figure out. But I am glad I was able to discover. I set up the basic desktop layout relatively easily but this was my biggest hurdle.
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+The next most difficult thing was making the layout for mobile. At first I was struggling because everything was out of wack. But I learned that by resizing the rows and columns it was much easier to adjust the display than I initially believed.
 
 To see how you can add code snippets, see below:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
 ```css
-.proud-of-this-css {
-	color: papayawhip;
+.container {
+	background-color: $primary-1;
+	display: grid;
+	grid-template-rows: 90vh 1fr;
+	grid-template-columns: 1fr 80vw 1fr;
+	justify-items: center;
+	align-items: center;
+
+	@media only screen and (max-width: $mobile) {
+		grid-template-columns: 1fr;
+		grid-template-rows: min-content 1fr;
+		padding: 2rem;
+	}
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-	console.log('🎉');
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+Grid. That's the most I can say. I still need more practice but I'm glad that I'm pushing myself but deciding to use it in every project.
 
 ### Useful resources
 
 - [Border radius on image](https://stackoverflow.com/questions/52151652/border-radius-if-there-is-an-image-on-the-border) - This helped me solve the issue where I was having trouble adding a border radius to the image automatically instead of manually applying it to match up with its parent container. Extremely helpful!
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
 ## Author
 
 - Frontend Mentor - [@itsreallydrew](https://www.frontendmentor.io/profile/itsreallydrew)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 

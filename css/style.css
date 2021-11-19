@@ -26,13 +26,21 @@ body {
   background-color: #090b1a;
   display: grid;
   grid-template-rows: 90vh 1fr;
+  grid-template-columns: 1fr 80vw 1fr;
   justify-items: center;
   align-items: center;
+}
+@media only screen and (max-width: 24em) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr;
+    padding: 2rem;
+  }
 }
 
 .card {
   grid-row: 1;
-  width: 70%;
+  grid-column: 2;
   height: min-content;
   border-radius: 20px;
   display: grid;
@@ -41,11 +49,28 @@ body {
   overflow: hidden;
   background-color: #1b1938;
 }
+@media only screen and (max-width: 24em) {
+  .card {
+    margin-top: 2rem;
+    width: 90vw;
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+    grid-template-columns: none;
+  }
+}
 .card__info {
   display: grid;
   grid-template-rows: repeat(3, min-content);
   gap: 5rem 0;
   padding: 0 7.5rem;
+}
+@media only screen and (max-width: 24em) {
+  .card__info {
+    grid-row: 2;
+    gap: 2rem 0;
+    padding: 0 3rem;
+    justify-items: center;
+  }
 }
 .card__heading {
   font-size: 3rem;
@@ -54,6 +79,13 @@ body {
   font-weight: 700;
   letter-spacing: 0.1rem;
   color: white;
+}
+@media only screen and (max-width: 24em) {
+  .card__heading {
+    font-size: 2.5rem;
+    padding: 2rem;
+    text-align: center;
+  }
 }
 .card__heading span {
   color: #aa5cdb;
@@ -64,10 +96,23 @@ body {
   color: rgba(255, 255, 255, 0.75);
   line-height: 1.5;
 }
+@media only screen and (max-width: 24em) {
+  .card__text {
+    text-align: center;
+    line-height: 1.8;
+  }
+}
 .card__stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: flex-start;
+}
+@media only screen and (max-width: 24em) {
+  .card__stats {
+    grid-template-rows: repeat(3, minmax(max-content, 1fr));
+    grid-template-columns: none;
+    padding: 2rem;
+  }
 }
 .card__stats.-companies,
 .card__stats .-templates,
@@ -81,13 +126,25 @@ body {
   color: rgba(255, 255, 255, 0.6);
   letter-spacing: 0.1rem;
 }
+@media only screen and (max-width: 24em) {
+  .card__stats.-companies,
+.card__stats .-templates,
+.card__stats .-queries {
+    align-items: center;
+  }
+}
 .card__stats.-companies p,
 .card__stats .-templates p,
 .card__stats .-queries p {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   color: white;
-  font-family: "Lexend Deca", sans-serif;
+  font-weight: 700;
   margin-bottom: 1rem;
+}
+@media only screen and (max-width: 24em) {
+  .card__stats.-queries {
+    justify-self: center;
+  }
 }
 .card__hero {
   background-color: #5b1c82;
@@ -97,4 +154,15 @@ body {
   opacity: 0.6;
   width: 100%;
   display: block;
+}
+
+.attribution {
+  grid-row: 2;
+  grid-column: 2;
+}
+@media only screen and (max-width: 24em) {
+  .attribution {
+    grid-row: 2;
+    margin-top: 2rem;
+  }
 }

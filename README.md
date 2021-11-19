@@ -55,6 +55,8 @@ I once again wanted to approach this problem using CSS grid. I feel like I have 
 
 ### What I learned
 
+The biggest thing I learned was how to set the opacity to create the overlay effect. This took me a lot longer than I believed it would to figure out. But I am glad I was able to discover. I set up the basic desktop layout relatively easily but this was my biggest hurdle.
+
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
 To see how you can add code snippets, see below:
@@ -93,9 +95,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@itsreallydrew](https://www.frontendmentor.io/profile/itsreallydrew)
 
 **Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 

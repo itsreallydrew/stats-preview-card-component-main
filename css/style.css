@@ -89,7 +89,12 @@ body {
   font-family: "Lexend Deca", sans-serif;
   margin-bottom: 1rem;
 }
+.card__hero {
+  background-color: #5b1c82;
+  filter: saturate(200%);
+}
 .card__hero img {
+  opacity: 0.6;
   width: 100%;
   display: block;
 }

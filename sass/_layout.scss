@@ -72,7 +72,11 @@
 	}
 
 	&__hero {
+		background-color: darken($primary-3, 30%);
+		filter: saturate(200%);
+
 		img {
+			opacity: 0.6; // set opacity so background color comes through
 			width: 100%;
 			display: block;
 		}

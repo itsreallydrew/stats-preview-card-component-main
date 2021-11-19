@@ -34,6 +34,62 @@ body {
   grid-row: 1;
   width: 70%;
   height: min-content;
+  border-radius: 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(min-content, 1fr));
+  align-items: center;
+  overflow: hidden;
+  background-color: #1b1938;
+}
+.card__info {
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  gap: 5rem 0;
+  padding: 0 7.5rem;
+}
+.card__heading {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  color: white;
+}
+.card__heading span {
+  color: #aa5cdb;
+}
+.card__text {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.5;
+}
+.card__stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: flex-start;
+}
+.card__stats.-companies,
+.card__stats .-templates,
+.card__stats .-queries {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  font-family: "Inter", sans-serif;
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.1rem;
+}
+.card__stats.-companies p,
+.card__stats .-templates p,
+.card__stats .-queries p {
+  font-size: 2.5rem;
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+  margin-bottom: 1rem;
+}
+.card__hero img {
+  width: 100%;
+  display: block;
 }
